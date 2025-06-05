@@ -1,5 +1,8 @@
 import ProjectCard from '@/components/projectCard';
 import Navbar from '@/components/navbar'
+import CostumerReview from '@/components/costumerReview'
+import FAQcard from '@/components/FQAcard';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -47,7 +50,7 @@ export default function Home() {
 
 
       <div className='flex justify-center pt-18'>
-        <img src='interface.png' alt="Product's interface" className='w-auto' />
+        <img src='interface.png' alt="Product's interface" className='w-auto h-170' />
       </div>
 
 
@@ -61,8 +64,8 @@ export default function Home() {
           Go from data novice to engineering pro ,faster than you thought possible
         </div>
 
-        <div className='flex justify-center pt-15 pl-15'>
-          <img src='product.png' alt="product's overview" className=""/>
+        <div className='flex justify-center pl-40 pt-15'>
+          <img src='product.png' alt="product's overview"/>
         </div>
 
         <button className='mt-15 rounded-lg bg-black text-white w-40 py-4 mx-auto '>View Course</button>
@@ -120,7 +123,63 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-200"></div>
+      <div className='flex flex-col py-20'>
+        <div className='text-center text-4xl font-bold'>Customer Testimonials</div>
+        <div className='text-center pt-5 pb-10'>What our customers say about us!</div>
+        <div className='px-30 grid grid-cols-3'>
+          <CostumerReview image={"Stars.png"} 
+            review={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."} 
+            avatar={"avatar.jpg"}
+            name={"Darshil Parmar"}
+            position={"HR, Google"}
+            />
+            <CostumerReview image={"Stars.png"} 
+            review={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."} 
+            avatar={"avatar.jpg"}
+            name={"Darshil Parmar"}
+            position={"HR, Google"}
+            />
+            <CostumerReview image={"Stars.png"} 
+            review={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."} 
+            avatar={"avatar.jpg"}
+            name={"Darshil Parmar"}
+            position={"HR, Google"}
+            />
+            <CostumerReview image={"Stars.png"} 
+            review={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."} 
+            avatar={"avatar.jpg"}
+            name={"Darshil Parmar"}
+            position={"HR, Google"}
+            />
+            <CostumerReview image={"Stars.png"} 
+            review={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."} 
+            avatar={"avatar.jpg"}
+            name={"Darshil Parmar"}
+            position={"HR, Google"}
+            />
+            <CostumerReview image={"Stars.png"} 
+            review={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."} 
+            avatar={"avatar.jpg"}
+            name={"Darshil Parmar"}
+            position={"HR, Google"}
+            />
+        </div>
+      </div>
+
+
+      <div className='flex flex-col bg-[#F7F7FB]'>
+          <div className='text-center text-4xl font-bold mt-30'>FAQs</div>
+          <div className='text-center pt-5'>Find answers to your most pressing questions about our data engineering courses and platform.</div>
+          <div className='pt-15 flex flex-col mb-30 '>
+              <FAQcard question={"What is Data engineering?"}/>
+              <FAQcard question={"Who should take courses?"}/>
+              <FAQcard question={"What is the platform?"}/>
+              <FAQcard question={"How do i enroll?"}/>
+              <FAQcard question={"Is there a refund policy?"}/>
+          </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
