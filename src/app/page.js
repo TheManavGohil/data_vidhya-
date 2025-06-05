@@ -1,103 +1,126 @@
-import Image from "next/image";
+import ProjectCard from '@/components/projectCard';
+import Navbar from '@/components/navbar'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-white text-black px-15">
+      <Navbar />  
+        
+      <div className='relative'>
+        <div className='absolute top-[100px] left-[-150px] w-[300px] h-[300px] rounded-full bg-[#6F37EE] opacity-20 blur-3xl z-0'></div>
+        <div className='absolute bottom-[100px] right-[-150px] w-[300px] h-[300px] rounded-full bg-[#6F37EE] opacity-20 blur-3xl z-0'></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className='flex flex-col z-10'>
+          <div className='flex justify-center item-center pt-25'>
+              <button className='flex justify-center rounded-3xl border border-gray-300 px-2 py-1 hover:cursor-pointer'>
+                <div className='rounded-2xl px-2 text-white bg-gradient-to-r from-[#2D3BF2] to-[#B832E9]'> new </div>
+                <span className="px-2 after:content-['>'] after:ml-4"> Intorducting datavidhya platform  </span>
+              </button>
+          </div>
+
+          <div className='text-5xl font-black flex flex-col justify-center py-5'>
+            <div className='text-center'>The #1 Job Transition Platform for </div>
+            <span className='flex justify-center bg-gradient-to-b from-[#2D3BF2] to-[#B832E9] bg-clip-text text-transparent leading-tight overflow-visible pt-1'>Data Engineers.</span>
+          </div>
+
+          <div className='text-gray-500 text-xl flex justify-center font-'>
+            Crush System Design and AI Interviews for breakfast!
+          </div>
+
+          <div className='flex justify-center font-semibold text-white pt-7 space-x-4'>
+            <button className='rounded-2xl py-3 px-5 bg-gradient-to-b from-[#2D3BF2] to-[#B832E9] hover:cursor-pointer'>Explore Courses</button>
+            <button className='rounded-2xl py-3 px-5 bg-[#2E2E2E] hover:cursor-pointer'>Solve Questions</button>
+          </div>
+
+          <div className='flex flex-col pt-20'> 
+            <div className='flex justify-center text-[#777777] text-xl'> Trusted by 25934 Engineers who got their dream job at </div>
+            <div className='flex justify-center items-center space-x-8 h-20 w-auto'>
+              {/* <img src='monday-logo.png' alt='monday.com' className="h-15 w-auto " />
+              <img src='segment-logo.png' alt='twilo-segment' className="h-20 w-auto" />
+              <img src='oracle-logo.png' alt='oracle' className="h-20 w-auto" />
+              <img src='samsung-logo.png' alt='samsung' className="h-20 w-auto" /> */}
+              <img src="companies.png" alt='comapnies' />
+            </div> 
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+
+      <div className='flex justify-center pt-18'>
+        <img src='interface.png' alt="Product's interface" className='w-auto' />
+      </div>
+
+
+      <div className='flex flex-col pt-20'>
+        <div className='text-center text-5xl font-bold'>
+          <div>The Ultimate</div>
+          <div> Data Engineering Course</div>
+        </div>
+
+        <div className='text-center text-lg pt-8 max-w-100 mx-auto'>
+          Go from data novice to engineering pro ,faster than you thought possible
+        </div>
+
+        <div className='flex justify-center pt-15 pl-15'>
+          <img src='product.png' alt="product's overview" className=""/>
+        </div>
+
+        <button className='mt-15 rounded-lg bg-black text-white w-40 py-4 mx-auto '>View Course</button>
+      </div>
+      
+
+      <div className='flex flex-col pt-20'>
+        <div className='text-center text-[#8B90A1]'>PROJECTS</div> 
+        <div className='pt-4 text-center font-bold text-4xl'>Work on Real Time Projects</div>
+        <div className='pt-4 text-center max-w-100 mx-auto text-sm'>Gain proficiency with 14+ extensive projects designed to provide practical, real-world data engineering experience</div>
+        <div className='pt-4 flex justify-center'>
+          <div className='flex rounded-2xl border border-gray-300 overflow-hidden'>
+            <button className='flex-1 py-2 w-60 text-white text-sm font-medium bg-gradient-to-bl from-[#2D3BF2] to-[#B832E9]'>Data Vidhya Projects</button>
+            <button className='flex-1 py-2 text-sm text-[#33333366] font-medium'>Students Review</button>
+          </div>
+        </div>
+        <div className='flex flex-wrap justify-center gap-5 pt-12'>
+            <ProjectCard image={"project.png"} project_name={"Project Name"} Airflow={"AirFlow"} description={"Learn to automate, schedule, and monitor data pipelines with Apache Airflow. This course covers the basics, building efficient DAGs, and real-world projects on AWS & GCP. Perfect for anyone looking to manage modern data workflows easily"} />
+            <ProjectCard image={"project.png"} project_name={"Project Name"} Airflow={"AirFlow"} description={"Learn to automate, schedule, and monitor data pipelines with Apache Airflow. This course covers the basics, building efficient DAGs, and real-world projects on AWS & GCP. Perfect for anyone looking to manage modern data workflows easily"} />
+            <ProjectCard image={"project.png"} project_name={"Project Name"} Airflow={"AirFlow"} description={"Learn to automate, schedule, and monitor data pipelines with Apache Airflow. This course covers the basics, building efficient DAGs, and real-world projects on AWS & GCP. Perfect for anyone looking to manage modern data workflows easily"} />
+        </div>
+        <div className='text-center pt-12'>
+          <button className='text-white bg-black rounded-lg w-40 mx-auto py-2'>View All Projects</button>        
+        </div>
+      </div>
+
+          
+      <div className='flex flex-col pt-20'>
+        <div className='text-center text-[#8B90A1]'>PLATFORM</div>
+        <div className='pt-5 text-center max-w-100 mx-auto text-4xl font-bold'>Solve Leet Code like problems</div>
+        <div className='pt-5 text-center text-sm max-w-175 mx-auto'>Our platform empowers you to advance your career with practical skills and real-world applications. Join a vibrant community that supports your learning journey.</div>
+        <div className='pt-8 flex justify-center'>
+          <div className='flex rounded-2xl border border-gray-300 overflow-hidden w-300'>
+              <button className='flex-1  py-2  text-white bg-gradient-to-bl from-[#2D3BF2] to-[#B832E9]'>Choose Your Path</button>
+              <button className='flex-1 text-[#33333366] border border-gray-300'>Solve Questions</button>
+              <button className='flex-1 text-[#33333366] border border-gray-300'>AI Review</button>
+              <button className='flex-1 text-[#33333366]'>Gamified Learning</button>
+          </div>
+        </div>
+        <div className='pt-5 flex justify-center'>
+          <div className='flex justify-around items-center bg-[#784FEF08] border border-gray-300 rounded-lg w-300 h-[420px]'>
+              <div className='flex-1 p-5'>
+                <div className='font-bold'>Choose Your Path</div>
+                <div className='text-[#33333366]'>
+                  <div className='max-w-80'>Choose your path and have a personalized roadmap . We offer :</div>
+                  <div>1. Pyspark</div>
+                  <div>2. Scala</div>
+                  <div>3. DBT</div>
+                  <div>4. Postgres SQL</div>
+                  <div>5.   Python</div>
+                </div>
+              </div>
+              <img src='platforms.png' alt='platforms' className='flex-2 p-5 w-auto h-[400px]'/>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-200"></div>
     </div>
   );
 }
