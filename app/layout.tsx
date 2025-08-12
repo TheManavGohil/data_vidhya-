@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +9,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -23,11 +28,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased bg-black min-h-screen`}
       >
-        {children}
+        <div className="min-h-screen relative bg-black">
+          {/* Left vertical line */}
+          <div className="fixed left-[218px] top-[72px] w-px h-[calc(100%-72px)] bg-[#1A1A1A] z-10"></div>
+          
+          {/* Right vertical line */}
+          <div className="fixed right-[218px] top-[72px] w-px h-[calc(100%-72px)] bg-[#1A1A1A] z-10"></div>
+          
+          {/* Main content with padding */}
+          <div className="mx-auto px-[218px] pt-[32px]">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
