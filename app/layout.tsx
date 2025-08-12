@@ -33,14 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased bg-black min-h-screen`}
       >
         <div className="min-h-screen relative bg-black">
-          {/* Left vertical line */}
-          <div className="fixed left-[218px] top-[72px] w-px h-[calc(100%-72px)] bg-[#1A1A1A] z-10"></div>
-          
-          {/* Right vertical line */}
-          <div className="fixed right-[218px] top-[72px] w-px h-[calc(100%-72px)] bg-[#1A1A1A] z-10"></div>
-          
-          {/* Main content with padding */}
-          <div className="mx-auto px-[218px] pt-[32px]">
+          <div className="mx-auto px-[112px] pt-[27px]">
             {children}
           </div>
         </div>
