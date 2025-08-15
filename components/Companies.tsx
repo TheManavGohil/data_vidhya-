@@ -1,11 +1,18 @@
+import { Inter } from 'next/font/google';
 import Image from 'next/image';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-inter',
+});
 
 export default function Companies() {
   return (
     <div className="w-full py-20">
       <div className="border border-[#1A1A1A]">
-        <div className="text-center border-b border-[#1A1A1A] py-10">
-          <h2 className="text-[#828282] text-lg">
+        <div className="text-center border-b border-[#1A1A1A] py-9">
+          <h2 className={`${inter.className} text-[#828282] text-lg`}>
             Trusted by 25,000+ Aspiring & Working Data Engineers From Top Companies
           </h2>
         </div>

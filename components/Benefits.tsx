@@ -26,11 +26,11 @@ export default function Benefits() {
           BENEFITS
         </p>
         
-        <h2 className={`${inter.className} text-center text-[40px] font-medium leading-[48px] tracking-[-0.03em] text-white mb-5`}>
+        <h2 className={`${inter.className} text-[40px] font-medium leading-[48px] tracking-[-0.03em] text-white mb-5`}>
           What we offer
         </h2>
 
-        <p className={`${inter.className} text-[#828282] h-[48px] text-medium mx-auto mb-12 leading-[26px]`}>
+        <p className={`${inter.className} text-[#828282] text-[20px] text-medium mx-auto mb-14 leading-[30px]`}>
           We offer expert-led courses and a<br />
           platform to help you become the best.
         </p>
@@ -39,7 +39,7 @@ export default function Benefits() {
         <div className="grid grid-cols-2">
           <button
             onClick={() => setActiveTab('platform')}
-            className={`py-6 text-center font-semibold text-[25px] border border-[#1A1A1A] hover:bg-[#1A1A1A] ${
+            className={`py-7 text-center font-semibold text-[25px] border border-[#1A1A1A] hover:bg-[#1A1A1A] ${
               activeTab === 'platform'
                 ? 'text-white border-b-3 border-b-white bg-[#1A1A1A]'
                 : 'text-[#828282]'
@@ -49,7 +49,7 @@ export default function Benefits() {
           </button>
           <button
             onClick={() => setActiveTab('courses')}
-            className={`py-6 text-center font-semibold text-[25px] border border-[#1A1A1A] hover:bg-[#1A1A1A] ${
+            className={`py-7 text-center font-semibold text-[25px] border border-[#1A1A1A] hover:bg-[#1A1A1A] ${
               activeTab === 'courses'
                 ? 'text-white border-b-3 border-b-white bg-[#1A1A1A]'
                 : 'text-[#828282]'
@@ -60,7 +60,7 @@ export default function Benefits() {
         </div>
 
         {/* Demo Image Box */}
-        <div className="border border-[#1A1A1A] py-20 px-15">
+        <div className="bg-[#0F0F0F] border border-[#1A1A1A] py-20 px-15">
           <Image
             src="/images/demo.svg"
             alt="Platform Demo"
