@@ -42,7 +42,7 @@ export default function Features() {
         </p>
         <div className='w-full h-full bg-[#141414] p-6'>
             <Image 
-                src='/images/coding.png'
+                src='/images/coding.svg'
                 alt='coding'
                 width={1000}
                 height={600}
@@ -50,33 +50,33 @@ export default function Features() {
             />
         </div>
       </div>
-      <div className='p-13 grid grid-cols-2 border border-[#1A1A1A]'>
-            <div className=''>
+      <div className='pt-13 px-13 grid grid-cols-2 border-t border-l border-r border-b border-[#1A1A1A]'>
+            <div className='border-r border-[#1A1A1A]'>
                 <h1 className={`${inter.className} text-white text-[26px] tracking-[-0.03em] font-semibold pb-3`}>Coding questions</h1>
                 <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-8 leading-[30px]`}>
                 Test your data engineering skills with real-world coding <br />problems tailored for interviews and industry scenarios.
                 </p>
-                <div className={`${inter.className} text-[#0050FF] text-[25px]`}>Learn More </div>
+                <div className={`${inter.className} text-[#0050FF] text-[25px] pb-10`}>Learn More </div>
                 <Image 
-                    src='/images/codingQ.png'
+                    src='/images/codingQ.svg'
                     alt='codingQ'
-                    width={1000}
-                    height={600}
+                    width={900}
+                    height={500}
                     className='w-full'
                 />
             </div>
             <div className=''>
-                <h1 className={`${inter.className} text-white text-[26px] tracking-[-0.03em] font-semibold pb-3`}>AI Resume Evaluator</h1>
-                <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-8 leading-[30px]`}>
+                <h1 className={`${inter.className} text-white text-[26px] tracking-[-0.03em] font-semibold pb-3 pl-13`}>AI Resume Evaluator</h1>
+                <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-8 leading-[30px] pl-13`}>
                 Get instant, AI-powered feedback on your resume,<br />customized for data engineering roles
                 </p>
-                <div className={`${inter.className} text-[#0050FF] text-[25px] mb-10`}>Learn More </div>
+                <div className={`${inter.className} text-[#0050FF] text-[25px] mb-10 pl-13`}>Learn More </div>
                 <Image
-                    src='/images/discussion.png'
+                    src='/images/discussion.svg'
                     alt='discuission'
                     width={1000}
                     height={600}
-                    className='w-full'
+                    className='w-full ml-13'
                 />
             </div>
        </div>
