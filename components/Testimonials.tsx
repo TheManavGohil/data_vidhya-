@@ -35,7 +35,7 @@ export default function Testimonials() {
           </div>
           <div className="max-w-md">
             <p className={`${inter.className} text-[#828282] text-lg leading-relaxed mr-8`}>
-              Real stories from people who've used our platform, courses, and tools to 10x their skills
+              Real stories from people who&apos;ve used our platform, courses, and tools to 10x their skills
             </p>
           </div>
         </div>

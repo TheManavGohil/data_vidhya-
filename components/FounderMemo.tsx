@@ -34,10 +34,10 @@ export default function FounderMemo() {
                     Make data engineering accessible, practical, and career-defining.
                   </p>
                   <p>
-                    In a world flooded with tools and theory-heavy content, we saw a gap, real-world, hands-on learning combined with strong community support. Data engineering isn't just about pipelines and tools; it's about solving real problems, building systems that scale, and enabling companies to make smarter decisions.
+                    In a world flooded with tools and theory-heavy content, we saw a gap, real-world, hands-on learning combined with strong community support. Data engineering isn&apos;t just about pipelines and tools; it&apos;s about solving real problems, building systems that scale, and enabling companies to make smarter decisions.
                   </p>
                   <p>
-                    Let's build the future of data, together.
+                    Let&apos;s build the future of data, together.
                   </p>
                 </div>
               </div>

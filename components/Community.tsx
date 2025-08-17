@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Inter } from 'next/font/google';
-import { Youtube, Linkedin, Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const inter = Inter({
   subsets: ['latin'],

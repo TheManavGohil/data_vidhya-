@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
@@ -18,8 +18,6 @@ const inter = Inter({
 });
 
 export default function Features() {
-  const [activeTab, setActiveTab] = useState('feature1');
-
   return (
     <div className="w-full pt-45">
       <div className="text-center">

@@ -11,7 +11,7 @@ const inter = Inter({
 export default function Subscribe() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // TODO: Add your newsletter API integration (like Substack, Mailchimp, etc.)
     console.log("Subscribed with:", email);
@@ -51,7 +51,7 @@ export default function Subscribe() {
 
         {/* Terms */}
         <p className={`${inter.className} text-[15px] text-[#828282] leading-[20px] max-w-lg mx-auto pb-40`}>
-          By subscribing, I agree to Substack's{" "}
+          By subscribing, I agree to Substack&apos;s{" "}
           <a href="#" className="text-[#7A7A7A] underline hover:text-[#CCCCCC] transition-colors">
             Terms of Use
           </a>{" "}

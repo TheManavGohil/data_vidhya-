@@ -76,7 +76,7 @@ export default function FAQ({ faqs }: FAQProps) {
           {/* Email us section */}
           <div className="pt-6 mt-6">
             <p className={`${inter.className} text-white text-[20px] font-medium leading-[24px] tracking-[-0.03em] pl-5`}>
-              Your question isn't listed here?{' '}
+              Your question isn&apos;t listed here?{' '}
               <a href="mailto:contact@datavidhya.com" className="font-medium text-[#828282] underline hover:text-[#0050FF] transition-colors">
                 Email us!
               </a>
