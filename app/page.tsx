@@ -7,6 +7,12 @@ import FeatureCard from "@/components/FeatureCard";
 import FeatureGrid from "@/components/FeatureGrid";
 import FAQ from "@/components/FAQ";
 import Community from "@/components/Community";
+import Testimonials from "@/components/Testimonials";
+import Projects from "@/components/Projects";
+import Subscribe from "@/components/Subscribe";
+import FounderMemo from "@/components/FounderMemo";
+import Footer from "@/components/Footer";
+import GetStartedSection from "@/components/Getstarted";
 
 export default function Home() {
   return (
@@ -27,7 +33,7 @@ export default function Home() {
       <FeatureCard 
           heading="AI Resume Evaluator"
           subheading={<>Get instant, AI-powered feedback on your resume,<br />customized for data engineering roles</>}
-          imageSrc="/images/evaluator.svg"
+          imageSrc="/images/evaluator.jpg"
           imageAlt="AI Evaluator"
       />
       <FeatureGrid 
@@ -54,6 +60,7 @@ export default function Home() {
           }
         ]}
       />
+      <Projects />
       <FAQ 
         faqs={[
           {
@@ -79,6 +86,12 @@ export default function Home() {
         ]}
       />
       <Community />
+      <Testimonials />
+      <Projects />
+      <Subscribe />
+      <FounderMemo />
+      <GetStartedSection />
+      <Footer />
     </main>
   );
 }
