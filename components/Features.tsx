@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import Image from 'next/image';
-import FeatureCard from './FeatureCard';
+import { ChevronDown } from 'lucide-react';
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -36,19 +36,28 @@ export default function Features() {
             practical, hands-on tools.
         </p>
         </div>
-        <FeatureCard 
-          heading="Coding Playground"
-          subheading={<>Practice real data engineering tasks in<br />a live, interactive environment.</>}
-          imageSrc="/images/coding.svg"
-          imageAlt="coding"
-        />
+        <div className='pt-13 px-13 border border-[#1A1A1A]'>
+        <h1 className={`${inter.className} text-white text-[26px] tracking-[-0.03em] font-semibold pb-3`}>Coding Playground</h1>
+        <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-14 leading-[30px]`}>
+        Practice real data engineering tasks in <br /> a live, interactive environment.
+        </p>
+        <div className='w-full h-full bg-[#141414] p-6'>
+            <Image 
+                src='/images/coding.png'
+                alt='coding'
+                width={1000}
+                height={600}
+                className='w-full'
+            />
+        </div>
+      </div>
       <div className='px-13 grid grid-cols-2 border border-[#1A1A1A]'>
             <div className='border-r border-[#1A1A1A] pt-13'>
                 <h1 className={`${inter.className} text-white text-[26px] tracking-[-0.03em] font-semibold pb-3`}>Coding questions</h1>
-                <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-8 leading-[30px]`}>
+                <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-4 leading-[30px]`}>
                 Test your data engineering skills with real-world coding <br />problems tailored for interviews and industry scenarios.
                 </p>
-                <div className={`${inter.className} text-[#0050FF] text-[21px] pb-10`}>Learn more </div>
+                <div className={`${inter.className} text-[#0050FF] text-[25px] pb-10 flex items-center hover:cursor-pointer`}>Learn More <ChevronDown className='w-8 h-8 text-[#0050FF] fill-[#0050FF] rotate-270' /> </div>
                 <Image 
                     src='/images/codingQ.svg'
                     alt='codingQ'
@@ -59,10 +68,10 @@ export default function Features() {
             </div>
             <div className='pt-13'>
                 <h1 className={`${inter.className} text-white text-[26px] tracking-[-0.03em] font-semibold pb-3 pl-13`}>AI Resume Evaluator</h1>
-                <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-8 leading-[30px] pl-13`}>
+                <p className={`${inter.className} text-[#828282] text-[21px] tracking-[-0.03em] text-medium mx-auto mb-4 leading-[30px] pl-13`}>
                 Get instant, AI-powered feedback on your resume,<br />customized for data engineering roles
                 </p>
-                <div className={`${inter.className} text-[#0050FF] text-[21px] mb-10 pl-13`}>Learn more </div>
+                <div className={`${inter.className} text-[#0050FF] text-[25px] mb-10 pl-13 flex items-center hover:cursor-pointer`}>Learn More <ChevronDown className='w-8 h-8 text-[#0050FF] fill-[#0050FF] rotate-270' /> </div>
                 <Image
                     src='/images/discussion.svg'
                     alt='discuission'
